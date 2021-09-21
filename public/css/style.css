@@ -1,5 +1,22 @@
-.a {
-  color: rebeccapurple;
+*, ::before, ::after {
+  margin: 0;
+  padding: 0.1%;
+  box-sizing: border-box;
+}
+
+/* Ma Police */
+html font-face {
+  font-family: "robotobold";
+  src: url("roboto-bold-webfont.woff2") format("woff2"), url("roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+font-face {
+  font-family: "robotolight";
+  src: url("roboto-light-webfont.woff2") format("woff2"), url("roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
