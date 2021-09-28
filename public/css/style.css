@@ -28,13 +28,14 @@ html {
   height: 35px;
 }
 
-.fas .fa-map-marker {
-  padding: 9px;
+.localisation i.fas.fa-map-marker-alt {
+  margin-top: 10px;
 }
 
 input {
   border: none;
   background-color: lightgrey;
+  margin-top: 7px;
 }
 
 .explorer {
@@ -57,10 +58,36 @@ header h2 {
   font-family: "robotobold";
 }
 
-nav h5 {
+.navigation {
   display: flex;
-  align-items: flex-start;
-  justify-content: left;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid;
+  border-radius: 20px;
+  width: 90%;
+  margin: 1em;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+.navigation h5 {
+  margin: 1em;
+  border: solid 1px #9356DC;
+  border-radius: 30%;
+  width: 13px;
+  border-radius: 40px;
+  padding: 3px 4px 3px 9px;
+  height: 20px;
+  BACKGROUND-COLOR: #9356DC;
+  color: white;
+}
+
+.resto__name {
+  border: 1px solid white;
+  border-radius: 1px 1px 10px 10px;
+  width: 98%;
+  height: 95px;
+  background-color: white;
 }
 
 .resto__name h4 {
@@ -69,13 +96,32 @@ nav h5 {
 
 .resto img {
   display: flex;
-  padding-left: 30px;
-  height: 250px;
-  width: 80%;
+  height: 225px;
+  width: 98%;
 }
 
 .resto__name__coeur {
   float: right;
+}
+
+#body {
+  background-color: #f2f2f2;
+}
+
+#body H3 {
+  font-family: "robotobold";
+}
+
+article {
+  padding-bottom: 20px;
+}
+
+article img {
+  width: 100%;
+  border: solid 1px white;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  object-fit: cover;
 }
 
 footer {
