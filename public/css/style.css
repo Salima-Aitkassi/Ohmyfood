@@ -12,22 +12,34 @@
 }
 html {
   font-family: "robotolight";
+  width: 100%;
 }
 
 .logo {
   display: flex;
   justify-content: center;
+  padding-bottom: 5px;
 }
 
 .localisation {
   display: flex;
   justify-content: center;
   background-color: lightgrey;
+  height: 35px;
+}
+
+.fas .fa-map-marker {
+  padding: 9px;
 }
 
 input {
   border: none;
   background-color: lightgrey;
+}
+
+.explorer {
+  background-color: #f2f2f2;
+  height: 200px;
 }
 
 .explorer h1 {
@@ -39,6 +51,46 @@ input {
   display: flex;
   justify-content: center;
   padding-left: 20px;
+}
+
+header h2 {
+  font-family: "robotobold";
+}
+
+nav h5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.resto__name h4 {
+  font-family: "robotobold";
+}
+
+.resto img {
+  display: flex;
+  padding-left: 30px;
+  height: 250px;
+  width: 80%;
+}
+
+.resto__name__coeur {
+  float: right;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5%;
+}
+
+footer .logo-footer {
+  filter: invert(4);
+}
+
+footer .logo-footer img {
+  width: 90px;
+  padding: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
