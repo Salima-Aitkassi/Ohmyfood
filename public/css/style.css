@@ -26,6 +26,7 @@ html {
   justify-content: center;
   background-color: lightgrey;
   height: 35px;
+  border-top: 2px solid grey;
 }
 
 .localisation i.fas.fa-map-marker-alt {
@@ -36,6 +37,8 @@ input {
   border: none;
   background-color: lightgrey;
   margin-top: 7px;
+  margin-bottom: 7px;
+  font-family: "robotobold";
 }
 
 button.explorer__:hover {
@@ -64,6 +67,7 @@ button.explorer__bouton {
 .explorer h1 {
   font-family: "robotobold";
   font-size: 26px;
+  margin-top: 1px;
 }
 
 .explorer p {
@@ -74,6 +78,7 @@ button.explorer__bouton {
 
 header h2 {
   font-family: "robotobold";
+  font-size: 18px;
 }
 
 .navigation {
@@ -106,6 +111,7 @@ header h2 {
   width: 95%;
   height: 90px;
   background-color: white;
+  margin-top: -20px;
 }
 
 .resto__name h4 {
@@ -136,6 +142,8 @@ header h2 {
 
 #body H3 {
   font-family: "robotobold";
+  padding-left: 21px;
+  padding-top: 20px;
 }
 
 article {
