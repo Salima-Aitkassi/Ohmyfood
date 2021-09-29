@@ -32,6 +32,8 @@ border-radius: 22px 22px 22px 22px;
     color: #f2f2f2;
     margin: -1em 0em 0em 9em;
 }
+.linear-gradient-explorer__bouton { background: linear-gradient(#9356DC,white);
+}
  
 
 .explorer {background-color: #f2f2f2;
@@ -76,27 +78,34 @@ border-color: #f2f2f2;
 .resto__name {
     border: 1px solid white;
     border-radius: 1px 1px 10px 10px;
-    width: 98%;
-    height: 95px;
+    width: 95%;
+    height: 90px;
     background-color: white;
  }
-.resto__name h4 {font-family: 'robotobold'; }
+.resto__name h4 {font-family: 'robotobold'; 
+margin-bottom: -12px;
+padding: 5px;}
+
+.resto__name p {padding: 5px; }
 
 .resto img{
     display: flex;
     height: 225px;
-    width: 98%;
+    width: 95%;
 }
 .resto__name__coeur {
     float: right;
-;
+margin-right: 15px;
 }
 
-#body { background-color: #f2f2f2;}
+
+#body { background-color: #f2f2f2;
+width: 100%;}
 
 #body  H3{ font-family: 'robotobold';}
 
-article{ padding-bottom: 20px; }
+article{ padding-bottom: 20px; 
+padding-left: 17px;}
 
 article img
  { width: 100%;
