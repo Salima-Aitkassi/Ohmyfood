@@ -77,14 +77,14 @@ border-color: #f2f2f2;
     box-shadow: 1px 1px 3px 3px lightgrey;
 counter-reset: counterFunction ;
 
-.fas,
-  { color: $color-primary;}
+.fas
+  {color: $color-primary;}
 
 
 &::before 
 {   position: absolute ;
     left: 0;
-    counter-increment: counterFunction 1 ;
+    counter-increment: counterFunction  ;
     content: counter(counterFunction);
     margin : 1em ;
     border: solid 1px $color-primary;

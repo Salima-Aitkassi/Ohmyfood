@@ -94,7 +94,7 @@ header h2 {
 .navigation::before {
   position: absolute;
   left: 0;
-  counter-increment: counterFunction 1;
+  counter-increment: counterFunction;
   content: counter(counterFunction);
   margin: 1em;
   border: solid 1px #9356DC;
