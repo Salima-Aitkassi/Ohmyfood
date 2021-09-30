@@ -45,11 +45,11 @@ button.explorer__:hover {
 }
 
 button.explorer__bouton {
-  border: solid 1px;
+  border: none 0.5px;
   border-radius: 22px 22px 22px 22px;
   height: 46px;
   background: linear-gradient(#9356DC, #FF79DA);
-  box-shadow: 5px;
+  box-shadow: #9356dc 0px 1px 5px 3px;
   color: #f2f2f2;
   margin: -1em 0em 0em 9em;
 }
@@ -78,18 +78,24 @@ header h2 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 1px solid;
+  border: none;
   border-radius: 20px;
   width: 90%;
+  height: 55px;
   margin: 1em;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
-  counter-reset: counterFonctionnement;
+  box-shadow: 1px 1px 3px 3px lightgrey;
+  counter-reset: counterFunction;
+}
+.navigation .fas {
+  color: #9356DC;
 }
 .navigation::before {
   position: absolute;
-  counter-increment: counterFonctionnement;
-  content: counter(counterFonctionnement);
+  left: 0;
+  counter-increment: counterFunction 1;
+  content: counter(counterFunction);
   margin: 1em;
   border: solid 1px #9356DC;
   border-radius: 30%;
