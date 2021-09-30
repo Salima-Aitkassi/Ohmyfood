@@ -1,5 +1,7 @@
 @import "./base/_font";
 
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
 
 html{ font-family:'robotolight';
 width: 100%;} 
@@ -15,10 +17,10 @@ padding-bottom: 5px;}
 justify-content: center;
 background-color: lightgrey;
 height: 35px;
-border-top: 2px solid grey;}
+border-top: 2px solid grey;
 
-.localisation  i.fas.fa-map-marker-alt{ 
-margin-top: 10px;}
+  i.fas.fa-map-marker-alt{ 
+margin-top: 10px;}}
 
 input
 { border: none;
@@ -33,27 +35,27 @@ button.explorer__bouton
 {   border: solid 1px;
     border-radius: 22px 22px 22px 22px;
     height: 46px;
-    border-color: #9356DC;
-    background-color: #9356DC ;
+    background: linear-gradient($color-primary,$color-secondary);
+    box-shadow: 5px;
     color: #f2f2f2;
     margin: -1em 0em 0em 9em;
 }
-.linear-gradient-explorer__bouton { background: linear-gradient(#9356DC,white);
-}
- 
+
 
 .explorer {background-color: #f2f2f2;
     height: 200px;
- }
-.explorer h1
+ 
+ h1
 { 
 font-family: 'robotobold';
 font-size: 26px; 
 margin-top: 1px;}
 
-.explorer p {display: flex;
+p {display: flex;
 justify-content: center; 
 padding-left: 20px;}
+} 
+
 
 header  h2
 {   font-family: 'robotobold';
@@ -69,10 +71,14 @@ width: 90%;
 margin: 1em;
 background-color: #f2f2f2;
 border-color: #f2f2f2;
-}
+counter-reset: counterFonctionnement;
 
-.navigation h5
-{ margin : 1em ;
+
+&::before 
+{   position: absolute;
+    counter-increment: counterFonctionnement;
+    content: counter(counterFonctionnement);
+    margin : 1em ;
     border: solid 1px #9356DC;
     border-radius: 30%;
     width: 13px;
@@ -82,7 +88,7 @@ border-color: #f2f2f2;
     BACKGROUND-COLOR: #9356DC;
     color: white;
     
-}
+}}
 
 
 .resto__name {
@@ -92,22 +98,24 @@ border-color: #f2f2f2;
     height: 90px;
     background-color: white;
     margin-top: -20px ;
- }
-.resto__name h4 {font-family: 'robotobold'; 
+ 
+h4 {font-family: 'robotobold'; 
 margin-bottom: -12px;
 padding: 5px;}
 
-.resto__name p {padding: 5px; }
+ p {padding: 5px; }
+
+&__coeur {
+    float: right;
+margin-right: 15px;
+}}
 
 .resto img{
     display: flex;
     height: 225px;
     width: 95%;
 }
-.resto__name__coeur {
-    float: right;
-margin-right: 15px;
-}
+
 
 
 #body { background-color: #f2f2f2;
@@ -121,16 +129,16 @@ width: 100%;}
 
 article
 { padding-bottom: 20px; 
-padding-left: 17px;}
+padding-left: 17px;
 
-article img
+ img
  { width: 100%;
 border: solid 1px white;
 border-top-left-radius:  13px;
 border-top-right-radius:13px;
 object-fit: cover;
 
- }
+ }}
 
 footer
 {
