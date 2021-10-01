@@ -174,7 +174,7 @@ footer {
   padding: 5%;
 }
 footer footer .logo-footer {
-  filter: invert(4);
+  filter: invert(1);
 }
 footer footer .logo-footer img {
   width: 90px;
