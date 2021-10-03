@@ -10,8 +10,19 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  width: 100%;
+}
+
 header {
   display: flex;
+}
+header img {
+  padding-left: 5em;
+}
+
+.menu-picture img {
+  width: 380px;
 }
 
 html {
