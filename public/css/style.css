@@ -39,6 +39,16 @@ html {
   font-family: "shrikhandregular";
   font-size: 30px;
 }
+#corps-page h2 {
+  font-size: 15px;
+}
+#corps-page .borderbottom {
+  margin-top: -9px;
+  margin-bottom: 15px;
+  height: 3px;
+  width: 11%;
+  background-color: #99E2D0;
+}
 #corps-page .corps-page__titre {
   display: flex;
   justify-content: starts;
