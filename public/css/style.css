@@ -28,16 +28,23 @@ html {
 }
 
 .menu-picture img {
-  width: 395px;
+  width: 398px;
+  padding-top: 3px;
+  height: 345px;
+  position: absolute;
 }
 
 #corps-page {
   background-color: #f2f2f2;
-  border-radius: 20px 20px 0 0;
+  border-radius: 35px 35px 0 0;
+  padding: 1%;
+  position: relative;
+  top: 300px;
 }
 #corps-page h1 {
   font-family: "shrikhandregular";
   font-size: 30px;
+  padding: 2%;
 }
 #corps-page h2 {
   font-size: 15px;
@@ -55,16 +62,31 @@ html {
 }
 #corps-page i.far.fa-heart {
   float: right;
-  padding-left: 3em;
-  padding-top: 30px;
+  padding-left: 3.2em;
+  padding-top: 40px;
   font-size: 21px;
 }
 #corps-page .plats {
-  border: solid 1px;
   margin-bottom: 2em;
-  border-radius: 20px;
+  border-radius: 12px;
   background-color: white;
-  padding: 1.5%;
+  padding: 2%;
+  width: 360px;
+  height: 45px;
+  margin-left: 5px;
+  box-shadow: 1px 1px 3px 3px lightgrey;
+}
+#corps-page .plats__name, #corps-page .plats__name__price {
+  font-family: "robotobold";
+}
+#corps-page .plats__name__price {
+  float: right;
+  margin-top: -35px;
+  margin-right: 15px;
+}
+#corps-page p {
+  font-size: 14px;
+  margin-top: 3px;
 }
 #corps-page button.commander {
   border: none 0.5px;
@@ -75,6 +97,11 @@ html {
   box-shadow: #9356dc 0px 1px 5px 3px;
   color: #f2f2f2;
   margin: 1em 0em 3em 10em;
+}
+
+footer {
+  position: relative;
+  top: 300px;
 }
 
 html {
