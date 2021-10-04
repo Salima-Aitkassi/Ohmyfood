@@ -10,19 +10,61 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("/public/font_shrik/shrikhand-regular-webfont.woff2") format("woff2"), url("/public/font_shrik/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   width: 100%;
 }
 
-header {
+.menu {
   display: flex;
 }
-header img {
+.menu img {
   padding-left: 5em;
 }
 
 .menu-picture img {
-  width: 380px;
+  width: 395px;
+}
+
+#corps-page {
+  background-color: #f2f2f2;
+  border-radius: 20px 20px 0 0;
+}
+#corps-page h1 {
+  font-family: "shrikhandregular";
+  font-size: 30px;
+}
+#corps-page .corps-page__titre {
+  display: flex;
+  justify-content: starts;
+}
+#corps-page i.far.fa-heart {
+  float: right;
+  padding-left: 3em;
+  padding-top: 30px;
+  font-size: 21px;
+}
+#corps-page .plats {
+  border: solid 1px;
+  margin-bottom: 2em;
+  border-radius: 20px;
+  background-color: white;
+  padding: 1.5%;
+}
+#corps-page button.commander {
+  border: none 0.5px;
+  border-radius: 22px 22px 22px 22px;
+  height: 35px;
+  width: 145px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: #9356dc 0px 1px 5px 3px;
+  color: #f2f2f2;
+  margin: 1em 0em 3em 10em;
 }
 
 html {
@@ -188,12 +230,13 @@ footer {
   color: white;
   padding: 5%;
 }
-footer footer .logo-footer {
-  filter: invert(1);
-}
-footer footer .logo-footer img {
+
+/*footer .logo-footer{ 
+}*/
+footer .logo-footer img {
   width: 90px;
-  padding: 5%;
+  padding: 1%;
+  filter: invert(1);
 }
 
 /*# sourceMappingURL=style.css.map */
