@@ -72,7 +72,6 @@ header  h2
 
 .navigation{ display: flex;
 align-items: center;
-justify-content:space-around;
 border: none;
 border-radius: 20px;
 width: 90%;
@@ -83,10 +82,14 @@ border-color: #f2f2f2;
 box-shadow: 1px 1px 3px 3px lightgrey;
 
 
-.menu{ font-family: 'robotobold';}
+.menu{ font-family: 'robotobold';
+padding-left: 9%;}
 
 
-.fas {color: $color-primary;}
+.fas {color: $color-primary;
+    padding-left: 12%;
+
+font-size: 20px;}
 
 &::before 
 {   position: absolute ;
