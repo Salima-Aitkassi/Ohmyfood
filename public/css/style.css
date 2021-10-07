@@ -189,8 +189,9 @@ input {
   font-family: "robotobold";
 }
 
-button.explorer__:hover {
+.explorer__bouton:hover {
   cursor: pointer;
+  transform: scale(1.3);
 }
 
 button.explorer__bouton {
