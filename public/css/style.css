@@ -363,6 +363,10 @@ footer {
   color: white;
   padding: 5%;
 }
+footer a {
+  color: white;
+  text-decoration: none;
+}
 
 /*footer .logo-footer{ 
 }*/
