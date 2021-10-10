@@ -164,11 +164,13 @@ html {
 }
 #corps-page .check--anime {
   display: flex;
+  width: 80px;
   float: right;
   margin-top: -66px;
   position: absolute;
   right: -430px;
-  animation: glissement 3s ease both;
+  animation: glissement 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  opacity: 0;
   /*animation: checkCarte 3 sec ease ;
   animation-direction:reverse ;
   transform: translateX((-20px));
@@ -179,13 +181,13 @@ html {
 @keyframes glissement {
   from {
     opacity: 0;
-    margin-right: 8%;
-    width: 90%;
+    margin-left: 0%;
+    width: 100%;
   }
   to {
     opacity: 1;
-    margin-right: 23%;
-    width: 90%;
+    margin-right: 27%;
+    width: 100%;
   }
 }
 #corps-page .check--anime .fa-check-circle {
