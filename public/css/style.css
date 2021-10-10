@@ -86,13 +86,20 @@ html {
 #corps-page .corps-page-like {
   position: absolute;
   right: 44px;
-  top: 33px;
+  top: 31px;
+  font-size: 22px;
+  color: blueviolet;
+  opacity: 0;
 }
 #corps-page i.far.fa-heart {
   float: right;
   padding-left: 18%;
   padding-top: 8%;
   font-size: 21px;
+}
+#corps-page:hover {
+  opacity: 1;
+  transition-duration: 2s;
 }
 #corps-page .plats {
   margin-bottom: 2em;
@@ -156,12 +163,30 @@ html {
   margin-top: 3px;
 }
 #corps-page .check--anime {
-  visibility: hidden;
   display: flex;
   float: right;
   margin-top: -66px;
   position: absolute;
-  right: 13px;
+  right: -430px;
+  animation: glissement 3s ease both;
+  /*animation: checkCarte 3 sec ease ;
+  animation-direction:reverse ;
+  transform: translateX((-20px));
+  @keyframes checkCarte{ 
+      from { opacity: 1;}
+      to{ opacity: 0;}}*/
+}
+@keyframes glissement {
+  from {
+    opacity: 0;
+    margin-right: 8%;
+    width: 90%;
+  }
+  to {
+    opacity: 1;
+    margin-right: 23%;
+    width: 90%;
+  }
 }
 #corps-page .check--anime .fa-check-circle {
   color: white;
@@ -171,6 +196,7 @@ html {
   font-size: 35px;
   padding: 11px 13px 12px 13px;
   background-color: #99E2D0;
+  opacity: 1;
 }
 #corps-page button.commander {
   border: none 0.5px;
@@ -186,8 +212,7 @@ html {
   cursor: pointer;
   transition-duration: 0.2s;
 }
-
-.Footer-menu {
+#corps-page .Footer-menu {
   position: relative;
   top: 240px;
 }
