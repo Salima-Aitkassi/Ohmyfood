@@ -112,6 +112,9 @@ padding-left: 9%;}
     
 }}
 
+
+
+
 /*@mixin spotNouveau { 
     
     position: absolute;
@@ -126,6 +129,8 @@ padding-left: 9%;}
     padding: 2% ;
     height: 10px; }*/
     
+ 
+
 .nv::after  {  position: absolute;
     content: "Nouveau";
     right: 43px;
@@ -163,7 +168,9 @@ padding-left: 9%;}
  
 h4 {font-family: 'robotobold'; 
 margin-bottom: -10px;
-padding: 5px;}
+padding: 5px;
+
+}
 
  p {padding: 5px; 
 margin-top: 2px;}
@@ -171,6 +178,7 @@ margin-top: 2px;}
 &__coeur {
     float: right;
 margin-right: 15px;
+margin-top: -53px;
 
 
 }}
@@ -187,7 +195,11 @@ margin-right: 15px;
 
 
 #body { background-color: #f2f2f2;
-width: 100%;}
+width: 100%;
+
+a{ text-decoration: none;
+color: black; }
+}
 
 #body  H3 
 { font-family: 'robotobold';

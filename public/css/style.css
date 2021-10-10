@@ -25,6 +25,15 @@ html {
 }
 .menu img {
   padding-left: 5em;
+  padding-top: 4%;
+}
+
+.menu-i-logo {
+  margin-left: 22px;
+  margin-top: 22px;
+}
+.menu-i-logo i.fas.fa-arrow-left {
+  color: black;
 }
 
 .menu-picture img {
@@ -40,15 +49,15 @@ html {
   padding: 1%;
   position: relative;
   top: 240px;
-  transform: translateY(0);
-  transform: translateY(0);
-  transform: translateY(0);
-  transform: translateY(0);
-  transform: translateY(0);
-  transform: translateY(0);
-  transform: translateY(0);
-  transform: translateY(0);
-  transform: translateY(0);
+  transform: translateY(0.5);
+  transform: translateY(0.5);
+  transform: translateY(0.5);
+  transform: translateY(0.5);
+  transform: translateY(0.5);
+  transform: translateY(0.5);
+  transform: translateY(0.5);
+  transform: translateY(0.5);
+  transform: translateY(0.5);
   /*button.commander:active{ cursor: pointer;
   transform: scale(1.5);}*/
 }
@@ -73,6 +82,11 @@ html {
 #corps-page .corps-page__titre {
   display: flex;
   justify-content: starts;
+}
+#corps-page .corps-page-like {
+  position: absolute;
+  right: 44px;
+  top: 33px;
 }
 #corps-page i.far.fa-heart {
   float: right;
@@ -141,15 +155,15 @@ html {
   font-size: 14px;
   margin-top: 3px;
 }
-#corps-page .check {
+#corps-page .check--anime {
+  visibility: hidden;
   display: flex;
   float: right;
   margin-top: -66px;
   position: absolute;
   right: 13px;
-  overflow: hidden;
 }
-#corps-page .check .fa-check-circle {
+#corps-page .check--anime .fa-check-circle {
   color: white;
   border: 1px solid;
   border-radius: 0px 5px 5px 1px;
@@ -167,6 +181,10 @@ html {
   box-shadow: #9356dc 0px 1px 5px 3px;
   color: #f2f2f2;
   margin: 1em 0em 3em 9em;
+}
+#corps-page:hover {
+  cursor: pointer;
+  transition-duration: 0.2s;
 }
 
 .Footer-menu {
@@ -348,6 +366,7 @@ header h2 {
 .resto__name__coeur {
   float: right;
   margin-right: 15px;
+  margin-top: -53px;
 }
 
 .resto img {
@@ -360,6 +379,10 @@ header h2 {
 #body {
   background-color: #f2f2f2;
   width: 100%;
+}
+#body a {
+  text-decoration: none;
+  color: black;
 }
 
 #body H3 {
