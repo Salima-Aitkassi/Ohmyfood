@@ -25,14 +25,11 @@ html {
 }
 .menu img {
   padding-left: 16%;
-  padding-top: 4%;
 }
-
-.menu-i-logo {
-  margin-left: 22px;
-  margin-top: 22px;
+.menu .menu-i-logo {
+  margin: 7px 0 0 20px;
 }
-.menu-i-logo i.fas.fa-arrow-left {
+.menu .menu-i-logo i.fas.fa-arrow-left {
   color: black;
 }
 
@@ -112,6 +109,8 @@ html {
 }
 #corps-page .plats:hover .check--anime {
   width: 20%;
+  transform: translate(0);
+  transition-duration: 3s;
 }
 #corps-page .plats:hover .plats__name {
   width: 65%;
@@ -122,6 +121,9 @@ html {
   flex-direction: column;
   padding-top: 4%;
 }
+#corps-page .plats__name__title {
+  font-size: 14px;
+}
 #corps-page .plats__name__title, #corps-page .plats__name__price {
   font-family: "robotobold";
 }
@@ -129,6 +131,7 @@ html {
   display: flex;
   font-size: 17px;
   width: 15%;
+  padding-top: 5%;
 }
 #corps-page .plats--anime_carte {
   animation: apparitionCarte 4s ease both;
@@ -169,13 +172,17 @@ html {
   animation-delay: 2s;
 }
 #corps-page p {
-  font-size: 14px;
-  margin-top: 3px;
+  font-size: 12.5px;
+  margin-top: 2px;
+  width: 83%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1%;
 }
 #corps-page .check--anime {
   display: flex;
   width: 0;
-  text-overflow: ellipsis;
   /*animation: checkCarte 3 sec ease ;
   animation-direction:reverse ;
   transform: translateX((-20px));
