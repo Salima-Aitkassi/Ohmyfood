@@ -37,7 +37,7 @@ html {
 }
 
 .menu-picture img {
-  width: 398px;
+  width: 358px;
   padding-top: 3px;
   height: 290px;
   position: absolute;
@@ -58,8 +58,6 @@ html {
   transform: translateY(0.5);
   transform: translateY(0.5);
   transform: translateY(0.5);
-  /*button.commander:active{ cursor: pointer;
-  transform: scale(1.5);}*/
 }
 #corps-page h1 {
   font-family: "shrikhandregular";
@@ -105,20 +103,36 @@ html {
   margin-bottom: 2em;
   border-radius: 12px;
   background-color: white;
-  padding: 2%;
-  width: 360px;
-  height: 45px;
+  padding-left: 2%;
+  width: 320px;
+  height: 60px;
   margin-left: 5px;
   box-shadow: 1px 1px 3px 3px lightgrey;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-#corps-page .plats__name, #corps-page .plats__name__price {
+#corps-page .plats:hover .check--anime {
+  width: 20%;
+  animation: glissement 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 3s;
+}
+#corps-page .plats:hover .plats__name {
+  width: 65%;
+}
+#corps-page .plats__name {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4%;
+}
+#corps-page .plats__name__title, #corps-page .plats__name__price {
   font-family: "robotobold";
 }
 #corps-page .plats__name__price {
-  float: right;
-  margin-top: -36px;
-  margin-right: 15px;
+  display: flex;
   font-size: 17px;
+  width: 15%;
 }
 #corps-page .plats--anime_carte {
   animation: apparitionCarte 4s ease both;
@@ -164,13 +178,7 @@ html {
 }
 #corps-page .check--anime {
   display: flex;
-  width: 80px;
-  float: right;
-  margin-top: -66px;
-  position: absolute;
-  right: -430px;
-  animation: glissement 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) both;
-  opacity: 0;
+  width: 0;
   /*animation: checkCarte 3 sec ease ;
   animation-direction:reverse ;
   transform: translateX((-20px));
@@ -180,27 +188,23 @@ html {
 }
 @keyframes glissement {
   from {
-    opacity: 0;
-    margin-left: 0%;
-    width: 100%;
+    width: 0%;
   }
   to {
-    opacity: 1;
-    margin-right: 27%;
-    width: 100%;
+    width: 20%;
   }
 }
 #corps-page .check--anime .fa-check-circle {
   color: white;
   border: 1px solid;
-  border-radius: 0px 5px 5px 1px;
-  width: 34px;
+  border-radius: 0px 11px 11px 1px;
+  width: 36px;
   font-size: 35px;
   padding: 11px 13px 12px 13px;
   background-color: #99E2D0;
   opacity: 1;
 }
-#corps-page button.commander {
+#corps-page:hover button.commander {
   border: none 0.5px;
   border-radius: 22px 22px 22px 22px;
   height: 35px;
@@ -256,7 +260,7 @@ input {
 .explorer__bouton:hover {
   cursor: pointer;
   transform: scale(1.2);
-  transition: 0.25s;
+  transition: 0.5s;
   background-blend-mode: lighten;
 }
 
@@ -264,7 +268,7 @@ button.explorer__bouton {
   border: none 0.5px;
   border-radius: 22px 22px 22px 22px;
   height: 46px;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: #9356dc 0px 1px 5px 3px;
   color: #f2f2f2;
   margin: 1em 0em 0em 9em;
@@ -348,36 +352,35 @@ header h2 {
 .nv::after {
   position: absolute;
   content: "Nouveau";
-  right: 43px;
-  bottom: 25px;
+  right: 38px;
+  bottom: -41px;
   background-color: #99E2D0;
   color: green;
-  font-size: 11px;
+  font-size: 9px;
   font-family: "robotobold";
-  width: 53px;
-  padding: 1% 0 1% 2%;
-  height: 15px;
+  width: 36px;
+  padding: 1% 2% 1% 2%;
+  height: 11px;
 }
 
 .nvx::after {
   position: relative;
   content: "Nouveau";
-  left: 285px;
-  bottom: 282px;
+  left: 261px;
+  bottom: 221px;
   background-color: #99E2D0;
   color: green;
-  font-size: 12px;
+  font-size: 9px;
   font-family: "robotobold";
-  width: 59px;
+  width: 62px;
   padding: 1% 2% 1% 2%;
-  height: 17px;
 }
 
 .resto__name {
   border: 1px solid white;
   border-radius: 1px 1px 10px 10px;
   width: 95%;
-  height: 90px;
+  height: 80px;
   background-color: white;
   margin-top: -20px;
 }
@@ -398,9 +401,9 @@ header h2 {
 
 .resto img {
   display: flex;
-  height: 225px;
+  height: 165px;
   width: 95%;
-  object-fit: cover;
+  object-position: 39% 61%;
 }
 
 #body {
