@@ -82,9 +82,9 @@ html {
 }
 #corps-page .corps-page-like {
   position: absolute;
-  right: 44px;
-  top: 31px;
-  font-size: 22px;
+  right: 14px;
+  top: 28px;
+  font-size: 21px;
   color: blueviolet;
   opacity: 0;
 }
@@ -109,7 +109,6 @@ html {
 }
 #corps-page .plats:hover .check--anime {
   width: 20%;
-  transform: translate(0);
   transition-duration: 3s;
 }
 #corps-page .plats:hover .plats__name {
@@ -183,20 +182,36 @@ html {
 #corps-page .check--anime {
   display: flex;
   width: 0;
-  /*animation: checkCarte 3 sec ease ;
-  animation-direction:reverse ;
-  transform: translateX((-20px));
-  @keyframes checkCarte{ 
-      from { opacity: 1;}
-      to{ opacity: 0;}}*/
+  /* @keyframes glissement {
+    from {
+      width: 0%;
+    }
+
+    to {
+      width: 20%;
+    }
+  }
+
+
+
+
+
+
+      /*animation: checkCarte 3 sec ease ;
+      animation-direction:reverse ;
+      transform: translateX((-20px));
+      @keyframes checkCarte{ 
+          from { opacity: 1;}
+          to{ opacity: 0;}}*/
 }
-@keyframes glissement {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 20%;
-  }
+#corps-page .check--anime:hover {
+  animation: checkAnime 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 5s;
+  max-width: 100%;
+  cursor: pointer;
+  transform: translateX(100px);
 }
 #corps-page .check--anime .fa-check-circle {
   color: white;
@@ -208,8 +223,7 @@ html {
   background-color: #99E2D0;
   opacity: 1;
 }
-
-#bouton {
+#corps-page #bouton {
   width: 100%;
   position: relative;
   top: 240px;
@@ -218,7 +232,7 @@ html {
   display: flex;
   justify-content: center;
 }
-#bouton button.bouton-bouton {
+#corps-page #bouton button.bouton-bouton {
   border: none 0.5px;
   border-radius: 22px 22px 22px 22px;
   height: 35px;
@@ -227,8 +241,7 @@ html {
   box-shadow: #9356dc 0px 1px 5px 3px;
   color: #f2f2f2;
 }
-
-.Footer-menu {
+#corps-page .Footer-menu {
   position: relative;
   top: 240px;
 }
