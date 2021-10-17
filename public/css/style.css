@@ -55,8 +55,6 @@ html {
   transform: translateY(0.5);
   transform: translateY(0.5);
   transform: translateY(0.5);
-  /*button.commander:active{ cursor: pointer;
-  transform: scale(1.5);}*/
 }
 #corps-page h1 {
   font-family: "shrikhandregular";
@@ -80,19 +78,37 @@ html {
   display: flex;
   justify-content: starts;
 }
-#corps-page .corps-page-like {
+#corps-page .corps-page-like-1 {
   position: absolute;
-  right: 14px;
-  top: 28px;
-  font-size: 21px;
-  color: blueviolet;
+  right: 21px;
+  top: 29px;
+  font-size: 25px;
   opacity: 0;
+}
+#corps-page .corps-page-like-1:hover {
+  opacity: 1;
+  color: #FF79DA;
+  transition: 0.1s;
+  font-size: 25px;
+  position: absolute;
+  top: 27px;
+  right: 20px;
+}
+#corps-page .corps-page-like-1 i.fas.fa-heart {
+  opacity: 1;
+  transition: 0.5s;
 }
 #corps-page i.far.fa-heart {
   float: right;
-  padding-left: 18%;
-  padding-top: 8%;
-  font-size: 21px;
+  padding-left: 55px;
+  padding-top: 29px;
+  font-size: 22px;
+  opacity: 1;
+}
+#corps-page i.far.fa-heart:hover {
+  opacity: 0;
+  mix-blend-mode: lighten;
+  transition: 0.1s;
 }
 #corps-page .plats {
   margin-bottom: 2em;
@@ -109,7 +125,6 @@ html {
 }
 #corps-page .plats:hover .check--anime {
   width: 20%;
-  transition-duration: 3s;
 }
 #corps-page .plats:hover .plats__name {
   width: 65%;
@@ -170,6 +185,16 @@ html {
 #corps-page .plats--8 {
   animation-delay: 2s;
 }
+#corps-page .fa-check-circle {
+  color: white;
+  border: 1px solid;
+  border-radius: 0px 11px 11px 1px;
+  width: 36px;
+  font-size: 35px;
+  padding: 11px 13px 12px 13px;
+  background-color: #99E2D0;
+  opacity: 1;
+}
 #corps-page p {
   font-size: 12.5px;
   margin-top: 2px;
@@ -182,48 +207,40 @@ html {
 #corps-page .check--anime {
   display: flex;
   width: 0;
-  /* @keyframes glissement {
-    from {
-      width: 0%;
-    }
-
-    to {
-      width: 20%;
-    }
-  }
-
-
-
-
-
-
-      /*animation: checkCarte 3 sec ease ;
-      animation-direction:reverse ;
-      transform: translateX((-20px));
-      @keyframes checkCarte{ 
-          from { opacity: 1;}
-          to{ opacity: 0;}}*/
 }
 #corps-page .check--anime:hover {
-  animation: checkAnime 3s;
+  animation: checkAnime 4s;
   animation-timing-function: ease;
   animation-fill-mode: both;
-  animation-delay: 5s;
+  animation-delay: 4s;
+  transition: transform 2s;
   max-width: 100%;
   cursor: pointer;
-  transform: translateX(100px);
+  transform: translateX(0px);
 }
-#corps-page .check--anime .fa-check-circle {
-  color: white;
-  border: 1px solid;
-  border-radius: 0px 11px 11px 1px;
-  width: 36px;
-  font-size: 35px;
-  padding: 11px 13px 12px 13px;
-  background-color: #99E2D0;
-  opacity: 1;
+
+/* @keyframes glissement {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 20%;
+  }
 }
-#corps-page #bouton {
+
+
+
+
+
+
+    /*animation: checkCarte 3 sec ease ;
+    animation-direction:reverse ;
+    transform: translateX((-20px));
+    @keyframes checkCarte{ 
+        from { opacity: 1;}
+        to{ opacity: 0;}}*/
+#bouton {
   width: 100%;
   position: relative;
   top: 240px;
@@ -232,7 +249,7 @@ html {
   display: flex;
   justify-content: center;
 }
-#corps-page #bouton button.bouton-bouton {
+#bouton button.bouton-bouton {
   border: none 0.5px;
   border-radius: 22px 22px 22px 22px;
   height: 35px;
@@ -241,9 +258,42 @@ html {
   box-shadow: #9356dc 0px 1px 5px 3px;
   color: #f2f2f2;
 }
-#corps-page .Footer-menu {
+
+#boutonN {
+  width: 100%;
   position: relative;
-  top: 240px;
+  top: 239px;
+  background-color: #f2f2f2;
+  padding: 20px 0px 40px 0%;
+  display: flex;
+  justify-content: center;
+}
+#boutonN button.bouton-bouton {
+  border: none 0.5px;
+  border-radius: 22px 22px 22px 22px;
+  height: 35px;
+  width: 145px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: #9356dc 0px 1px 5px 3px;
+  color: #f2f2f2;
+}
+
+.Footer-menu {
+  background-color: black;
+  color: white;
+  padding: 5%;
+  position: absolute;
+  top: 1430px;
+  width: 86%;
+}
+
+.Footer-menuN {
+  background-color: black;
+  color: white;
+  padding: 5%;
+  position: absolute;
+  top: 1520px;
+  width: 86%;
 }
 
 html {
