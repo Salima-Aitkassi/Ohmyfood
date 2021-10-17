@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "robotobold";
   src: url("/public/font/roboto-bold-webfont.woff2") format("woff2"), url("/public/font/roboto-bold-webfont.woff") format("woff");
@@ -100,7 +101,8 @@ html {
 }
 #corps-page i.far.fa-heart {
   float: right;
-  padding-left: 55px;
+  position: relative;
+  padding-left: 58px;
   padding-top: 29px;
   font-size: 22px;
   opacity: 1;
@@ -213,33 +215,21 @@ html {
   animation-timing-function: ease;
   animation-fill-mode: both;
   animation-delay: 4s;
-  transition: transform 2s;
+  transition: 2s;
   max-width: 100%;
   cursor: pointer;
-  transform: translateX(0px);
+  transform: translateX(0);
+  transform-origin: right;
 }
 
-/* @keyframes glissement {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 20%;
-  }
-}
-
-
-
-
-
-
-    /*animation: checkCarte 3 sec ease ;
-    animation-direction:reverse ;
-    transform: translateX((-20px));
-    @keyframes checkCarte{ 
-        from { opacity: 1;}
-        to{ opacity: 0;}}*/
+/* &:hover{ animation: checkAnime 4s;
+     animation-timing-function: ease;
+     animation-fill-mode: both;
+     animation-delay: 4s;
+     transition: transform 2s;
+     max-width: 100%;
+     cursor: pointer;
+     transform: translateX(0px);}}}*/
 #bouton {
   width: 100%;
   position: relative;
@@ -296,6 +286,61 @@ html {
   width: 86%;
 }
 
+/* RESPONSIVE TABLETTES  */
+@media (min-width: 376px) and (max-width: 810px) {
+  .logo {
+    width: 75%;
+  }
+  .logo img {
+    padding-right: 6%;
+  }
+
+  .localisation {
+    width: 75%;
+  }
+
+  .explorer {
+    width: 65%;
+  }
+  .explorer button.explorer__bouton {
+    margin: 0em 0em 0em 12em;
+  }
+  .explorer p {
+    padding: 0 60px;
+  }
+
+  nav {
+    width: 60%;
+    margin: 2em 0em 0 20px;
+  }
+  nav .navigation::before {
+    margin: 2em;
+  }
+
+  .resto {
+    width: 60%;
+    margin-left: 10px;
+  }
+
+  .nv::after {
+    position: absolute;
+    content: "Nouveau";
+    left: 385px;
+    bottom: 295px;
+  }
+
+  .nvx::after {
+    position: absolute;
+    content: "Nouveau";
+    left: 362px;
+  }
+}
+/* RESPONSIVE DESKTOP */
+@media (min-width: 810px) and (max-width: 1280px) {
+    html {
+    background-color: royalblue;
+  }
+}
 html {
   font-family: "robotolight";
   width: 100%;
