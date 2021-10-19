@@ -277,57 +277,141 @@ html {
 
 /* RESPONSIVE TABLETTES  */
 @media (min-width: 376px) and (max-width: 810px) {
-  .logo {
-    width: 75%;
+  html, .logo {
+    width: 100%;
   }
-  .logo img {
+  html img, .logo img {
     padding-right: 6%;
   }
 
   .localisation {
-    width: 65%;
+    width: 100%;
   }
 
   .explorer {
-    width: 65%;
+    width: 100%;
   }
   .explorer button.explorer__bouton {
-    margin: 0em 0em 0em 12em;
+    margin: 4em 0em 0em 23em;
   }
   .explorer p {
     padding: 0 60px;
   }
 
   nav {
-    width: 60%;
-    margin: 2em 0em 0 20px;
+    width: 100%;
+    margin: 0em 0em 0 22px;
   }
   nav .navigation::before {
     margin: 2em;
   }
 
+  header h2 {
+    padding-left: 10px;
+  }
+
   #body {
-    width: 65%;
+    width: 100%;
   }
-
-  .resto {
-    width: 60%;
-    margin-left: 10px;
+  #body .resto {
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding-bottom: 5%;
   }
-
-  .nv::after {
+  #body img {
+    display: flex;
+    height: 272px;
+    width: 95%;
+    object-position: 39% 61%;
+  }
+  #body .nv::after {
     position: absolute;
     content: "Nouveau";
-    left: 385px;
+    left: 597px;
     bottom: 295px;
+    padding: 1% 5% 2% 2%;
+    font-size: 16px;
   }
-
-  .nvx::after {
+  #body .nvx::after {
     position: absolute;
     content: "Nouveau";
-    left: 362px;
+    left: 592px;
+    bottom: -95px;
+    font-size: 16px;
+  }
+  #body i.fas.fa-heart {
+    position: absolute;
+    right: 72px;
+    font-size: 20px;
+    opacity: 0;
+  }
+  #body i.fas.fa-heart:hover {
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(#FF79DA, #9356DC);
+    mix-blend-mode: lighten;
   }
 }
+.menu .menu-i-logo {
+  margin: 6px 106px 0 55px;
+}
+
+.menu-picture img {
+  width: 97.5%;
+  height: 33%;
+  padding-top: 3px;
+  height: 290px;
+  position: absolute;
+}
+
+#corps-page .corps-page--like {
+  padding-left: 15%;
+  padding-top: 3%;
+  font-size: 23px;
+  position: absolute;
+  right: 30px;
+}
+
+.fas.fa-heart {
+  opacity: 1;
+}
+.fas.fa-heart:hover {
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  mix-blend-mode: lighten;
+}
+
+.borderbottom {
+  margin-left: 190px;
+}
+
+#corps-page .plats {
+  margin-left: 195px;
+}
+#corps-page h1 {
+  margin-left: 70px;
+}
+#corps-page h2 {
+  margin-left: 195px;
+}
+
+.Footer-menu {
+  background-color: black;
+  color: white;
+  padding: 5%;
+  position: absolute;
+  top: 1430px;
+  width: 88%;
+}
+
 /* RESPONSIVE DESKTOP */
 @media (min-width: 810px) and (max-width: 1280px) {
     html {
