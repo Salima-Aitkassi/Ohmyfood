@@ -113,9 +113,6 @@ padding-left: 9%;}
     
 }}
 
-
-
-
 /*@mixin spotNouveau { 
     
     position: absolute;
@@ -157,7 +154,17 @@ padding-left: 9%;}
      }
 
 
- 
+ .resto{ background-color: #f2f2f2;
+
+a{ text-decoration: none;
+color: black;}
+
+img{
+    display: flex;
+    height: 165px;
+    width: 95%;
+    object-position: 39% 61%;}}
+
 
 .resto__name {
     border: 1px solid white;
@@ -170,10 +177,9 @@ padding-left: 9%;}
 h4 {font-family: 'robotobold'; 
 margin-bottom: -10px;
 padding: 5px;
-
 }
 
- p {padding: 5px; 
+p {padding: 5px; 
 margin-top: 2px;}
 
 &__coeur {
@@ -181,18 +187,25 @@ margin-top: 2px;}
 margin-right: 15px;
 margin-top: -53px;
 
-
 }}
 
+i.fas.fa-heart{ 
+    position: absolute;
+    right: 37px;
+    font-size: 20px;
+    opacity: 0;
 
+    
 
-.resto img{
-    display: flex;
-    height: 165px;
-    width: 95%;
-    object-position: 39% 61% ;
-}
-
+&:hover{ 
+    opacity: 1;
+    transition: 1s ;
+    transition-delay: 0.1s;
+    transition-timing-function: ease;
+    -webkit-text-fill-color: transparent;
+background: linear-gradient($color-secondary,$color-primary);
+mix-blend-mode: lighten;
+}}
 
 
 #body { background-color: #f2f2f2;

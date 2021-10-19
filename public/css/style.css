@@ -79,38 +79,27 @@ html {
   display: flex;
   justify-content: starts;
 }
-#corps-page .corps-page-like-1 {
-  position: absolute;
-  right: 21px;
-  top: 29px;
-  font-size: 25px;
-  opacity: 0;
-}
-#corps-page .corps-page-like-1:hover {
-  opacity: 1;
-  color: #FF79DA;
-  transition: 0.1s;
-  font-size: 25px;
-  position: absolute;
-  top: 27px;
-  right: 20px;
-}
-#corps-page .corps-page-like-1 i.fas.fa-heart {
-  opacity: 1;
-  transition: 0.5s;
-}
-#corps-page i.far.fa-heart {
-  float: right;
-  position: relative;
-  padding-left: 58px;
-  padding-top: 29px;
+#corps-page .corps-page--like {
+  padding-left: 15%;
+  padding-top: 7%;
   font-size: 22px;
-  opacity: 1;
+  position: absolute;
+  right: 30px;
 }
-#corps-page i.far.fa-heart:hover {
+#corps-page .corps-page--like .fas.fa-heart {
+  right: -1px;
+  top: 27px;
+  font-size: 25px;
   opacity: 0;
+  -webkit-text-fill-color: transparent;
+}
+#corps-page .corps-page--like .fas.fa-heart:hover {
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease;
+  background: linear-gradient(#FF79DA, #9356DC);
   mix-blend-mode: lighten;
-  transition: 0.1s;
 }
 #corps-page .plats {
   margin-bottom: 2em;
@@ -296,7 +285,7 @@ html {
   }
 
   .localisation {
-    width: 75%;
+    width: 65%;
   }
 
   .explorer {
@@ -315,6 +304,10 @@ html {
   }
   nav .navigation::before {
     margin: 2em;
+  }
+
+  #body {
+    width: 65%;
   }
 
   .resto {
@@ -494,6 +487,20 @@ header h2 {
   padding: 1% 2% 1% 2%;
 }
 
+.resto {
+  background-color: #f2f2f2;
+}
+.resto a {
+  text-decoration: none;
+  color: black;
+}
+.resto img {
+  display: flex;
+  height: 165px;
+  width: 95%;
+  object-position: 39% 61%;
+}
+
 .resto__name {
   border: 1px solid white;
   border-radius: 1px 1px 10px 10px;
@@ -517,11 +524,20 @@ header h2 {
   margin-top: -53px;
 }
 
-.resto img {
-  display: flex;
-  height: 165px;
-  width: 95%;
-  object-position: 39% 61%;
+i.fas.fa-heart {
+  position: absolute;
+  right: 37px;
+  font-size: 20px;
+  opacity: 0;
+}
+i.fas.fa-heart:hover {
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  mix-blend-mode: lighten;
 }
 
 #body {
