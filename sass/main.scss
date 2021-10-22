@@ -48,6 +48,8 @@ button.explorer__bouton
     box-shadow: #9356dc 0px 1px 5px 3px;
     color: #f2f2f2;
     margin: 1em 0em 0em 7em;
+
+    &:hover{ filter: brightness(1.3);}
 }
 
 
