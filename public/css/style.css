@@ -84,13 +84,11 @@ html {
   right: 30px;
   top: 32px;
   font-size: 23px;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  transition: all 3s;
+  cursor: pointer;
+  opacity: 1;
 }
 #corps-page .corps-page--icon-stack i.far.fa-heart.icon-stack-1x:hover {
-  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 #corps-page .corps-page--icon-stack i.far.fa-heart.icon-stack-2x {
   position: relative;
@@ -99,10 +97,9 @@ html {
   font-size: 23px;
   -webkit-background-clip: text;
   background-clip: text;
-  transition: all 3s;
 }
 #corps-page .corps-page--icon-stack i.far.fa-heart.icon-stack-2x:hover {
-  background: linear-gradient(#FF79DA, #9356DC);
+  opacity: 1;
 }
 #corps-page .plats {
   margin-bottom: 2em;
@@ -293,79 +290,95 @@ html {
 }
 
 /* RESPONSIVE TABLETTES  */
-/*@media (min-width:376px) and (max-width:810px)
-{ 
-  html, .logo{ width: 100%;
-
-    img{ padding-right: 6%;}}
-
-    .localisation{ width: 100%;}
-
-    .explorer{ width: 100%;
-
-    button.explorer__bouton{     margin: 2em 0em 0em 23em;}
-
-    h1{ padding: 1.5%;}
-
-    p{ padding: 0 60px;}
-    }
-    nav { width: 100%;
-            margin: 0em 0em 0 22px;
-
-    .navigation::before{ margin: 2em; }}
-
-    header h2{ padding-left: 10px;}
-
-#body{ 
-
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+  html, .logo {
     width: 100%;
+  }
+  html img, .logo img {
+    padding-right: 6%;
+  }
 
-    .resto{ width: 90%;
+  .localisation {
+    width: 100%;
+  }
+
+  .explorer {
+    width: 100%;
+  }
+  .explorer button.explorer__bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 30px 30px 285px;
+  }
+  .explorer h1 {
+    padding: 1.5%;
+  }
+  .explorer p {
+    padding: 0 60px;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0em 0em 0 22px;
+  }
+  nav .navigation::before {
+    margin: 2em;
+  }
+
+  header h2 {
+    padding-left: 10px;
+  }
+
+  #body {
+    width: 100%;
+  }
+  #body .resto {
+    width: 90%;
     margin-left: 40px;
     margin-top: 10px;
     padding-bottom: 5%;
-}
-
-    img{ display: flex;
+  }
+  #body img {
+    display: flex;
     height: 272px;
     width: 95%;
     object-position: 39% 61%;
-    border-radius: 13px 8% 0px 0px;}
-
-
-    .nv::after{    
-        position: absolute;
-        content: "Nouveau";
-        left: 597px;
-        bottom: 295px;
-    padding: 1% 5% 2% 2%;
-font-size: 16px;}
-
-    .nvx::after{ 
-        position: absolute;
-        content: "Nouveau";
-        left: 592px;
-        bottom: -95px;
-        font-size: 16px;
-
-    }
-i.fas.fa-heart {
+    border-radius: 13px 8% 0px 0px;
+  }
+  #body .nv::after {
     position: absolute;
-    right: 72px;
+    content: "Nouveau";
+    left: 575px;
+    bottom: 355px;
+    padding: 1% 5% 2% 2%;
+    font-size: 16px;
+  }
+  #body .nvx::after {
+    position: absolute;
+    content: "Nouveau";
+    left: 570px;
+    bottom: -23px;
+    font-size: 16px;
+  }
+  #body i.fas.fa-heart {
+    position: absolute;
+    right: 67px;
     font-size: 20px;
     opacity: 0;
-&:hover{
-    opacity: 1; 
+  }
+  #body i.fas.fa-heart:hover {
+    opacity: 1;
     transition: 1s;
     transition-delay: 0.1s;
     transition-timing-function: ease;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(#FF79DA, #9356DC);
-    mix-blend-mode: lighten;}}
-
-}}
-
-/*.menu .menu-i-logo {margin: 6px 106px 0 55px;}
+    mix-blend-mode: lighten;
+  }
+}
+/*
+.menu .menu-i-logo {margin: 6px 106px 0 55px;}
 
 .menu-picture img{ width: 97.5%;
     height: 33%;
@@ -373,13 +386,19 @@ i.fas.fa-heart {
     height: 290px;
     position: absolute;}
 
+/* #corps-page { 
 
-    #corps-page .corps-page--like {
-    padding-left: 15%;
-    padding-top: 3%;
-    font-size: 23px;
-    position: absolute;
-    right: 30px;}
+    width: 100%;
+
+    .corps-page--icon-stack i.far.fa-heart.icon-stack {
+    position: relative;
+    left: 408px;
+    top: 25px;
+    font-size: 23px;}
+
+
+}
+
 
     .fas.fa-heart{ opacity: 1;
 
@@ -445,6 +464,7 @@ body {
 }
 .localisation i.fas.fa-map-marker-alt {
   margin-top: 10px;
+  padding-left: 35px;
 }
 
 input {
@@ -469,7 +489,7 @@ button.explorer__bouton {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: #9356dc 0px 1px 5px 3px;
   color: #f2f2f2;
-  margin: 1em 0em 0em 7em;
+  margin: 1em 0em 0em 8em;
 }
 button.explorer__bouton:hover {
   filter: brightness(1.3);
@@ -498,6 +518,7 @@ button.explorer__bouton:hover {
 header h2 {
   font-family: "robotobold";
   font-size: 18px;
+  padding-left: 15px;
 }
 
 .navigation {
