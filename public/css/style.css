@@ -85,20 +85,24 @@ html {
   top: 32px;
   font-size: 23px;
   cursor: pointer;
-  opacity: 1;
 }
 #corps-page .corps-page--icon-stack i.far.fa-heart.icon-stack-1x:hover {
+  opacity: 0;
   background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
-#corps-page .corps-page--icon-stack i.far.fa-heart.icon-stack-2x {
+#corps-page .corps-page--icon-stack i.fas.fa-heart.icon-stack-2x {
   position: relative;
   left: 45px;
   top: 28px;
   font-size: 23px;
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
 }
-#corps-page .corps-page--icon-stack i.far.fa-heart.icon-stack-2x:hover {
+#corps-page .corps-page--icon-stack i.fas.fa-heart.icon-stack-2x:hover {
   opacity: 1;
 }
 #corps-page .plats {
@@ -251,6 +255,11 @@ html {
   box-shadow: #9356dc 0px 1px 5px 3px;
   color: #f2f2f2;
 }
+#bouton button.bouton-bouton:hover {
+  transform: scale(1.1);
+  background-blend-mode: lighten;
+  transition: 0.5s;
+}
 
 #boutonN {
   width: 100%;
@@ -269,6 +278,11 @@ html {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: #9356dc 0px 1px 5px 3px;
   color: #f2f2f2;
+}
+#boutonN button.bouton-bouton:hover {
+  transform: scale(1.1);
+  background-blend-mode: lighten;
+  transition: 0.5s;
 }
 
 .Footer-menu {
