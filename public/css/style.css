@@ -47,6 +47,26 @@ html {
   padding: 1%;
   position: relative;
   top: 240px;
+  /*  i.far.fa-heart.icon-stack-1x{ 
+
+
+
+
+        &:hover{ 
+            cursor: pointer;
+            opacity: 0;
+          }}
+
+    i.fas.fa-heart.icon-stack-2x { 
+
+        opacity: 0;
+       background: linear-gradient( $color-primary,$color-secondary);
+     -webkit-background-clip: text;
+        background-clip: text;
+       color: transparent;
+
+    &:hover{ opacity: 1;
+        }}} */
   transform: translateY(0.5);
   transform: translateY(0.5);
   transform: translateY(0.5);
@@ -60,7 +80,7 @@ html {
 #corps-page h1 {
   font-family: "shrikhandregular";
   font-size: 27px;
-  padding: 1%;
+  padding: 1.1%;
 }
 #corps-page .fr {
   margin-right: 15%;
@@ -75,35 +95,12 @@ html {
   width: 11%;
   background-color: #99E2D0;
 }
+#corps-page .fa-stack {
+  padding-left: 15%;
+  padding-top: 6%;
+}
 #corps-page .corps-page__titre {
   display: flex;
-  justify-content: starts;
-}
-#corps-page .corps-page--icon-stack i.far.fa-heart.icon-stack-1x {
-  position: absolute;
-  right: 30px;
-  top: 32px;
-  font-size: 23px;
-  cursor: pointer;
-}
-#corps-page .corps-page--icon-stack i.far.fa-heart.icon-stack-1x:hover {
-  opacity: 0;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-#corps-page .corps-page--icon-stack i.fas.fa-heart.icon-stack-2x {
-  position: relative;
-  left: 45px;
-  top: 28px;
-  font-size: 23px;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-#corps-page .corps-page--icon-stack i.fas.fa-heart.icon-stack-2x:hover {
-  opacity: 1;
 }
 #corps-page .plats {
   margin-bottom: 2em;
@@ -140,7 +137,7 @@ html {
   display: flex;
   flex-direction: column;
   padding-top: 4%;
-  transition: all 2s;
+  transition: all 2s ease;
 }
 #corps-page .plats__name__title {
   font-size: 14px;
@@ -304,7 +301,7 @@ html {
 }
 
 /* RESPONSIVE TABLETTES  */
-@media only screen and (min-width: 414px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   html, .logo {
     width: 100%;
   }
@@ -363,34 +360,35 @@ html {
   #body .nv::after {
     position: absolute;
     content: "Nouveau";
-    left: 575px;
-    bottom: 355px;
+    right: 80px;
+    bottom: 94px;
     padding: 1% 5% 2% 2%;
     font-size: 16px;
   }
   #body .nvx::after {
     position: absolute;
     content: "Nouveau";
-    left: 570px;
-    bottom: -23px;
+    left: 595px;
+    bottom: -300px;
     font-size: 16px;
   }
-  #body i.fas.fa-heart {
+}
+/*
+i.fas.fa-heart {
     position: absolute;
     right: 67px;
     font-size: 20px;
     opacity: 0;
-  }
-  #body i.fas.fa-heart:hover {
-    opacity: 1;
+&:hover{
+    opacity: 1; 
     transition: 1s;
     transition-delay: 0.1s;
     transition-timing-function: ease;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(#FF79DA, #9356DC);
-    mix-blend-mode: lighten;
-  }
-}
+    mix-blend-mode: lighten;}}
+
+}}
 /*
 .menu .menu-i-logo {margin: 6px 106px 0 55px;}
 
@@ -449,11 +447,30 @@ html {
 }
 
 /* RESPONSIVE DESKTOP */
-@media (min-width: 810px) and (max-width: 1280px) {
+@media (min-width: 992px) {
     html {
     background-color: royalblue;
   }
 }
+.anime-coeur .coeur-vide {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+.anime-coeur .coeur-plein {
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: opacity 1s ease;
+}
+.anime-coeur:hover .coeur-vide {
+  opacity: 0;
+}
+.anime-coeur:hover .coeur-plein {
+  opacity: 1;
+}
+
 html {
   font-family: "robotolight";
   width: 100%;
@@ -551,7 +568,7 @@ header h2 {
   font-family: "robotobold";
   padding-left: 9%;
 }
-.navigation .fas {
+.navigation i.fas {
   color: #9356DC;
   padding-left: 12%;
   font-size: 20px;
@@ -645,24 +662,8 @@ header h2 {
 }
 .resto__name__coeur {
   float: right;
-  margin-right: 15px;
-  margin-top: -53px;
-}
-
-i.fas.fa-heart {
-  position: absolute;
-  right: 37px;
-  font-size: 20px;
-  opacity: 0;
-}
-i.fas.fa-heart:hover {
-  opacity: 1;
-  transition: 1s;
-  transition-delay: 0.1s;
-  transition-timing-function: ease;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(#FF79DA, #9356DC);
-  mix-blend-mode: lighten;
+  margin-top: -60px;
+  padding-left: 25px;
 }
 
 #body {

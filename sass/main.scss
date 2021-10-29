@@ -1,6 +1,7 @@
 @import "./base/_font";
-@import "./pages/menu.scss";
-@import "./pages/responsive.scss";
+@import "menu.scss";
+@import "responsive.scss";
+@import "./composants/anime-coeur.scss";
 
 
 $color-primary:#9356DC;
@@ -97,7 +98,7 @@ box-shadow: 1px 1px 3px 3px lightgrey;
 padding-left: 9%;}
 
 
-.fas {color: $color-primary;
+i.fas{color: $color-primary;
     padding-left: 12%;
     font-size: 20px;}
 
@@ -187,29 +188,10 @@ padding: 5px;
 p {padding: 5px; 
 margin-top: 2px;}
 
-&__coeur {
+&__coeur { 
     float: right;
-margin-right: 15px;
-margin-top: -53px;
-
-}}
-
-i.fas.fa-heart{ 
-    position: absolute;
-    right: 37px;
-    font-size: 20px;
-    opacity: 0;
-
-    
-
-&:hover{ 
-    opacity: 1;
-    transition: 1s ;
-    transition-delay: 0.1s;
-    transition-timing-function: ease;
-    -webkit-text-fill-color: transparent;
-background: linear-gradient($color-secondary,$color-primary);
-mix-blend-mode: lighten;
+    margin-top: -60px;
+    padding-left: 25px;
 }}
 
 
