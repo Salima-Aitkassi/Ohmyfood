@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "robotobold";
   src: url("/public/font/roboto-bold-webfont.woff2") format("woff2"), url("/public/font/roboto-bold-webfont.woff") format("woff");
@@ -80,7 +79,7 @@ html {
 #corps-page h1 {
   font-family: "shrikhandregular";
   font-size: 27px;
-  padding: 1.1%;
+  margin-left: 2px;
 }
 #corps-page .fr {
   margin-right: 15%;
@@ -97,7 +96,7 @@ html {
 }
 #corps-page .fa-stack {
   padding-left: 15%;
-  padding-top: 6%;
+  padding-top: 4.5%;
 }
 #corps-page .corps-page__titre {
   display: flex;
@@ -287,7 +286,7 @@ html {
   color: white;
   padding: 5%;
   position: absolute;
-  top: 1430px;
+  top: 1423px;
   width: 86%;
 }
 
@@ -317,10 +316,8 @@ html {
     width: 100%;
   }
   .explorer button.explorer__bouton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 30px 30px 285px;
+    margin-left: 40%;
+    margin-top: 6%;
   }
   .explorer h1 {
     padding: 1.5%;
@@ -425,31 +422,56 @@ i.fas.fa-heart {
 
 
 
-   /* .borderbottom {margin-left: 190px; }
+   /**/
+.menu .resp .menu-i-logo {
+  margin: 6px 106px 0 55px;
+}
 
- /*   #corps-page { 
+.menu-picture .resp img {
+  width: 97.5%;
+  object-fit: cover;
+  object-position: 39% 61%;
+}
 
-          .plats {
-    margin-left: 195px;}
+.borderbottom .resp {
+  margin-left: 190px;
+}
 
-    h1{ margin-left: 70px;}
+#corps-page .resp {
+  width: 98%;
+}
+#corps-page .resp .plats {
+  margin-left: 195px;
+}
+#corps-page .resp h1 {
+  padding-left: 28%;
+}
+#corps-page .resp h2 {
+  margin-left: 195px;
+}
+#corps-page .resp .fa-stack {
+  padding-top: 2.5%;
+}
 
-    h2{ margin-left: 195px;}
-    }
-
-    .Footer-menu {
-    background-color: black;
-    color: white;
-    padding: 5%;
-    position: absolute;
-    top: 1430px;
-    width: 88%;
+.Footer-menu .resp {
+  background-color: black;
+  color: white;
+  padding: 5%;
+  position: absolute;
+  top: 1430px;
+  width: 88%;
 }
 
 /* RESPONSIVE DESKTOP */
-@media (min-width: 992px) {
-    html {
-    background-color: royalblue;
+@media (min-width: 993px) {
+  button.explorer__bouton {
+    border: none 0.5px;
+    border-radius: 22px 22px 22px 22px;
+    height: 46px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: #9356dc 0px 1px 5px 3px;
+    color: #f2f2f2;
+    margin: 4em 0em 0em 31em;
   }
 }
 .anime-coeur .coeur-vide {
@@ -462,7 +484,7 @@ i.fas.fa-heart {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  transition: opacity 1s ease;
+  transition: opacity 0.7s ease;
 }
 .anime-coeur:hover .coeur-vide {
   opacity: 0;
@@ -471,6 +493,22 @@ i.fas.fa-heart {
   opacity: 1;
 }
 
+/*.loader{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    height: 40px;
+    position: absolute;
+    right: 7px;
+    top: 450px;
+    height: 100%;
+    width: 95%;}
+
+
+     /* <div class="loader">
+        <i class="fas fa-utensils-alt"></i>
+    </div>*/
 html {
   font-family: "robotolight";
   width: 100%;
