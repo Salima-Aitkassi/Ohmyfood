@@ -454,7 +454,7 @@ i.fas.fa-heart {
   padding-top: 2.5%;
 }
 
-.Footer-menu .resp {
+.Footer-menu {
   background-color: black;
   color: white;
   padding: 5%;
@@ -465,6 +465,10 @@ i.fas.fa-heart {
 
 /* RESPONSIVE DESKTOP */
 @media (min-width: 993px) {
+  html {
+    width: 96%;
+  }
+
   nav {
     width: 50%;
     margin-left: 18em;
@@ -542,13 +546,50 @@ i.fas.fa-heart {
   }
 
   .menu-picture img {
-    width: 98%;
+    width: 98.7%;
     object-fit: cover;
     object-position: 18% 82%;
   }
 
   #corps-page {
     padding-left: 35%;
+  }
+  #corps-page .fa-stack {
+    padding-left: 15%;
+    padding-top: 2%;
+  }
+
+  #bouton {
+    padding: 4px 0 50px 0;
+  }
+  #bouton button.bouton-bouton {
+    border: none 0.5px;
+    border-radius: 22px 22px 22px 22px;
+    height: 38px;
+    width: 150px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: #9356dc 0px 1px 5px 3px;
+    color: #f2f2f2;
+    margin-top: -15px;
+    margin-right: 75px;
+  }
+
+  .Footer-menu {
+    background-color: black;
+    color: white;
+    padding: 5%;
+    position: absolute;
+    top: 1423px;
+    width: 89%;
+  }
+
+  .Footer-menuN {
+    background-color: black;
+    color: white;
+    padding: 5%;
+    position: absolute;
+    top: 1520px;
+    width: 89%;
   }
 }
 .anime-coeur .coeur-vide {
@@ -744,9 +785,6 @@ header h2 {
   padding: 1% 2% 1% 2%;
 }
 
-.resto {
-  background-color: #f2f2f2;
-}
 .resto a {
   text-decoration: none;
   color: black;
