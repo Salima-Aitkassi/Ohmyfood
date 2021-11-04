@@ -143,23 +143,23 @@ i.fas{color: $color-primary;
 
 .nv::after  {  position: absolute;
     content: "Nouveau";
-    right: 38px;
+    right: 30px;
     bottom: -41px;
     background-color: $color-tertiary;
     color: green;
-    font-size: 9px;
+    font-size: 13px;
     font-family: 'robotobold';
-    width: 36px;
-    padding: 1% 2% 1% 2% ;
-    height: 11px; } 
+    width: 50px;
+    padding: 1% 2% 2% 2% ;
+    height: 12px; } 
 
 .nvx::after { position: relative;
     content: "Nouveau";
     left: 261px;
-    bottom: 221px;
+    bottom: 212px;
     background-color: $color-tertiary;
     color: green;
-    font-size: 9px;
+    font-size: 13px;
     font-family: 'robotobold';
     width: 62px;
     padding: 1% 2% 1% 2% ;
