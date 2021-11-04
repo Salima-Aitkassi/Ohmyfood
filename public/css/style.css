@@ -300,7 +300,7 @@ html {
 }
 
 /* RESPONSIVE TABLETTES  */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   html, .logo {
     width: 100%;
   }
@@ -358,115 +358,62 @@ html {
     position: absolute;
     content: "Nouveau";
     right: 80px;
-    bottom: 94px;
+    bottom: 500px;
     padding: 1% 5% 2% 2%;
     font-size: 16px;
   }
   #body .nvx::after {
-    position: absolute;
+    position: relative;
     content: "Nouveau";
-    left: 595px;
-    bottom: -300px;
+    left: 530px;
+    bottom: 305px;
+    padding: 1% 2% 1% 2%;
     font-size: 16px;
   }
-}
-/*
-i.fas.fa-heart {
+  #body .menu .menu-i-logo {
+    margin: 6px 106px 0 55px;
+  }
+  #body .menu-picture img {
+    width: 97.5%;
+    object-fit: cover;
+    object-position: 39% 61%;
+  }
+  #body .borderbottom {
+    margin-left: 190px;
+  }
+  #body #corps-page {
+    width: 98%;
+  }
+  #body #corps-page .plats {
+    margin-left: 195px;
+  }
+  #body #corps-page h1 {
+    padding-left: 28%;
+  }
+  #body #corps-page h2 {
+    margin-left: 195px;
+  }
+  #body #corps-page .fa-stack {
+    padding-top: 2.5%;
+  }
+  #body .Footer-menu {
+    background-color: black;
+    color: white;
+    padding: 5%;
     position: absolute;
-    right: 67px;
-    font-size: 20px;
-    opacity: 0;
-&:hover{
-    opacity: 1; 
-    transition: 1s;
-    transition-delay: 0.1s;
-    transition-timing-function: ease;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(#FF79DA, #9356DC);
-    mix-blend-mode: lighten;}}
-
-}}
-/*
-.menu .menu-i-logo {margin: 6px 106px 0 55px;}
-
-.menu-picture img{ width: 97.5%;
-    height: 33%;
-    padding-top: 3px;
-    height: 290px;
-    position: absolute;}
-
-/* #corps-page { 
-
-    width: 100%;
-
-    .corps-page--icon-stack i.far.fa-heart.icon-stack {
-    position: relative;
-    left: 408px;
-    top: 25px;
-    font-size: 23px;}
-
-
+    top: 1430px;
+    width: 88%;
+  }
 }
-
-
-    .fas.fa-heart{ opacity: 1;
-
-    &:hover{
-    opacity: 0; 
-    transition: 1s;
-    transition-delay: 0.1s;
-    transition-timing-function: ease;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(#FF79DA, #9356DC);
-    mix-blend-mode: lighten;}}
-
-
-
-   /**/
-.menu .menu-i-logo .resp {
-  margin: 6px 106px 0 55px;
-}
-
-.menu-picture img .resp {
-  width: 97.5%;
-  object-fit: cover;
-  object-position: 39% 61%;
-}
-
-.borderbottom .resp {
-  margin-left: 190px;
-}
-
-#corps-page-responsive {
-  width: 98%;
-  background-color: royalblue;
-}
-#corps-page-responsive .plats {
-  margin-left: 195px;
-}
-#corps-page-responsive h1 {
-  padding-left: 28%;
-}
-#corps-page-responsive h2 {
-  margin-left: 195px;
-}
-#corps-page-responsive .fa-stack {
-  padding-top: 2.5%;
-}
-
-.Footer-menu {
-  background-color: black;
-  color: white;
-  padding: 5%;
-  position: absolute;
-  top: 1430px;
-  width: 88%;
-}
-
+/**/
 /* RESPONSIVE DESKTOP */
 @media (min-width: 993px) {
   html {
     width: 96%;
+  }
+
+  .explorer {
+    height: 190px;
   }
 
   nav {
@@ -529,13 +476,6 @@ i.fas.fa-heart {
     padding-bottom: 40px;
     width: 33%;
     height: 260px;
-  }
-
-  button.explorer__bouton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30em;
   }
 
   /* PAGE MENU */
@@ -621,12 +561,21 @@ i.fas.fa-heart {
     right: 7px;
     top: 450px;
     height: 100%;
-    width: 95%;}
+    width: 95%;}*/
+/* body{animation: 4s ease-out 0s 1 FadeIn;}
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
 
 
-     /* <div class="loader">
+   /* <div class="loader">
         <i class="fas fa-utensils-alt"></i>
-    </div>*/
+    </div> */
 html {
   font-family: "robotolight";
   width: 100%;
@@ -670,13 +619,16 @@ input {
 }
 
 button.explorer__bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none 0.5px;
   border-radius: 22px 22px 22px 22px;
   height: 46px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: #9356dc 0px 1px 5px 3px;
   color: #f2f2f2;
-  margin: 1em 0em 0em 8em;
+  margin: auto;
 }
 button.explorer__bouton:hover {
   filter: brightness(1.3);
