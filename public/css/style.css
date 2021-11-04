@@ -16,12 +16,9 @@
   font-weight: normal;
   font-style: normal;
 }
-html {
-  width: 100%;
-}
-
 .menu {
   display: flex;
+  padding-top: 5px;
 }
 .menu img {
   padding-left: 16%;
@@ -34,10 +31,10 @@ html {
 }
 
 .menu-picture img {
-  width: 358px;
   padding-top: 3px;
   height: 290px;
   position: absolute;
+  width: 100%;
 }
 
 #corps-page {
@@ -286,8 +283,8 @@ html {
   color: white;
   padding: 5%;
   position: absolute;
-  top: 1423px;
-  width: 86%;
+  top: 1417px;
+  width: 100%;
 }
 
 .Footer-menuN {
@@ -295,16 +292,20 @@ html {
   color: white;
   padding: 5%;
   position: absolute;
-  top: 1520px;
-  width: 86%;
+  top: 1510px;
+  width: 90%;
 }
 
 /* RESPONSIVE TABLETTES  */
 @media (min-width: 768px) and (max-width: 992px) {
-  html, .logo {
+  html {
     width: 100%;
   }
-  html img, .logo img {
+
+  .logo {
+    width: 100%;
+  }
+  .logo img {
     padding-right: 6%;
   }
 
@@ -331,11 +332,41 @@ html {
     margin: 0em 0em 0 22px;
   }
   nav .navigation::before {
-    margin: 2em;
+    margin: 25px;
   }
 
   header h2 {
     padding-left: 10px;
+  }
+
+  .menu .menu-i-logo {
+    margin: 6px 106px 0 55px;
+  }
+
+  .menu-picture img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 39% 61%;
+  }
+
+  .borderbottom {
+    margin-left: 190px;
+  }
+
+  #corps-page {
+    width: 98%;
+  }
+  #corps-page .plats {
+    margin-left: 195px;
+  }
+  #corps-page h1 {
+    padding-left: 28%;
+  }
+  #corps-page h2 {
+    margin-left: 195px;
+  }
+  #corps-page .fa-stack {
+    padding-top: 2.5%;
   }
 
   #body {
@@ -347,12 +378,15 @@ html {
     margin-top: 10px;
     padding-bottom: 5%;
   }
+  #body .resto__name__coeur {
+    padding-left: 120px;
+  }
   #body img {
     display: flex;
     height: 272px;
     width: 95%;
     object-position: 39% 61%;
-    border-radius: 13px 8% 0px 0px;
+    border-radius: 13px 13px 0px 0px;
   }
   #body .nv::after {
     position: absolute;
@@ -370,39 +404,13 @@ html {
     padding: 1% 2% 1% 2%;
     font-size: 16px;
   }
-  #body .menu .menu-i-logo {
-    margin: 6px 106px 0 55px;
-  }
-  #body .menu-picture img {
-    width: 97.5%;
-    object-fit: cover;
-    object-position: 39% 61%;
-  }
-  #body .borderbottom {
-    margin-left: 190px;
-  }
-  #body #corps-page {
-    width: 98%;
-  }
-  #body #corps-page .plats {
-    margin-left: 195px;
-  }
-  #body #corps-page h1 {
-    padding-left: 28%;
-  }
-  #body #corps-page h2 {
-    margin-left: 195px;
-  }
-  #body #corps-page .fa-stack {
-    padding-top: 2.5%;
-  }
   #body .Footer-menu {
     background-color: black;
     color: white;
     padding: 5%;
     position: absolute;
-    top: 1430px;
-    width: 88%;
+    top: 1417px;
+    width: 90%;
   }
 }
 /**/
@@ -484,11 +492,13 @@ html {
     justify-content: center;
     align-items: center;
   }
+  .menu__img {
+    padding-left: 3%;
+  }
 
   .menu-picture img {
-    width: 98.7%;
     object-fit: cover;
-    object-position: 18% 82%;
+    object-position: 38% 62%;
   }
 
   #corps-page {
@@ -520,7 +530,7 @@ html {
     padding: 5%;
     position: absolute;
     top: 1423px;
-    width: 89%;
+    width: 100%;
   }
 
   .Footer-menuN {
@@ -529,7 +539,7 @@ html {
     padding: 5%;
     position: absolute;
     top: 1520px;
-    width: 89%;
+    width: 90%;
   }
 }
 .anime-coeur .coeur-vide {
@@ -551,31 +561,35 @@ html {
   opacity: 1;
 }
 
-/*.loader{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
-    height: 40px;
-    position: absolute;
-    right: 7px;
-    top: 450px;
-    height: 100%;
-    width: 95%;}*/
-/* body{animation: 4s ease-out 0s 1 FadeIn;}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  z-index: 2;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  animation: 3s ease-out 0s 1 both FadeIn;
+}
+.loader .loader-icon {
+  font-size: 100px;
+  color: #9356DC;
+  transform: rotate(360deg);
+  transition: all 3s ease;
+}
 @keyframes FadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  0% {
+    opacity: 1;
+    transition: 3s;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+    background-color: #99E2D0;
+  }
 }
 
-
-   /* <div class="loader">
-        <i class="fas fa-utensils-alt"></i>
-    </div> */
 html {
   font-family: "robotolight";
   width: 100%;
@@ -583,12 +597,15 @@ html {
 
 body {
   counter-reset: compteur;
+  margin: 0;
+  width: 100%;
 }
 
 .logo {
   display: flex;
   justify-content: center;
   padding-bottom: 5px;
+  margin-top: 5px;
 }
 
 .localisation {
@@ -686,7 +703,7 @@ header h2 {
   left: 0;
   counter-increment: compteur;
   content: counter(compteur);
-  margin: 1em;
+  margin: 5px;
   border: solid 1px #9356DC;
   border-radius: 30%;
   width: 13px;
@@ -767,8 +784,8 @@ header h2 {
 }
 .resto__name__coeur {
   float: right;
-  margin-top: -60px;
-  padding-left: 25px;
+  margin-top: -48px;
+  padding-left: 75px;
 }
 
 #body {

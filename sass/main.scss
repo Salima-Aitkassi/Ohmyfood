@@ -11,11 +11,14 @@ $color-tertiary: #99E2D0;
 
 html{ font-family:'robotolight';
 width: 100%;} 
-body{ counter-reset: compteur;}
+body{ counter-reset: compteur;
+margin: 0;
+width: 100%;}
 
 .logo{ display: flex;
 justify-content: center;
-padding-bottom: 5px;}
+padding-bottom: 5px;
+margin-top: 5px;}
 
 
 
@@ -110,7 +113,7 @@ i.fas{color: $color-primary;
     left: 0;
     counter-increment: compteur ;
     content: counter(compteur) ;
-    margin : 1em ;
+    margin : 5px ;
     border: solid 1px $color-primary;
     border-radius: 30%;
     width: 13px;
@@ -193,13 +196,14 @@ margin-top: 2px;}
 
 &__coeur { 
     float: right;
-    margin-top: -60px;
-    padding-left: 25px;
+    margin-top: -48px;
+    padding-left: 75px;
 }}
 
 
 #body { background-color: #f2f2f2;
 width: 100%;
+
 
 a{ text-decoration: none;
 color: black; }
@@ -228,6 +232,7 @@ footer
     background-color: black;
     color: white;
     padding: 5%;
+ 
 
 a{ color: white;
 text-decoration: none;}
