@@ -231,7 +231,6 @@
      cursor: pointer;
      transform: translateX(0px);}}}*/
 #bouton {
-  width: 100%;
   position: relative;
   top: 240px;
   background-color: #f2f2f2;
@@ -284,7 +283,7 @@
   padding: 5%;
   position: absolute;
   top: 1417px;
-  width: 100%;
+  width: -webkit-fill-available;
 }
 
 .Footer-menuN {
@@ -298,10 +297,6 @@
 
 /* RESPONSIVE TABLETTES  */
 @media (min-width: 768px) and (max-width: 992px) {
-  html {
-    width: 100%;
-  }
-
   .logo {
     width: 100%;
   }
@@ -392,14 +387,14 @@
     position: absolute;
     content: "Nouveau";
     right: 80px;
-    bottom: 500px;
-    padding: 1% 5% 2% 2%;
+    bottom: 90px;
+    padding: 1% 3% 2% 2%;
     font-size: 16px;
   }
   #body .nvx::after {
     position: relative;
     content: "Nouveau";
-    left: 530px;
+    left: 546px;
     bottom: 305px;
     padding: 1% 2% 1% 2%;
     font-size: 16px;
@@ -423,17 +418,20 @@
   .explorer {
     height: 190px;
   }
+  .explorer .explorer__1 {
+    margin-bottom: 4em;
+  }
 
   nav {
     width: 50%;
-    margin-left: 18em;
+    margin-left: 21em;
   }
   nav .navigation::before {
     position: absolute;
     left: 280px;
     counter-increment: compteur;
     content: counter(compteur);
-    margin: 1em;
+    margin: 4em;
     border: solid 1px #9356DC;
     border-radius: 30%;
     width: 13px;
@@ -530,7 +528,6 @@
     padding: 5%;
     position: absolute;
     top: 1423px;
-    width: 100%;
   }
 
   .Footer-menuN {
@@ -566,26 +563,28 @@
   align-items: center;
   justify-content: center;
   background-color: #99E2D0;
+  border: 6px solid #FF79DA;
+  border-radius: 35px 35px 35px 35px;
   z-index: 2;
   position: fixed;
   height: 100vh;
   width: 100%;
-  animation: 3s ease-out 0s 1 both FadeIn;
+  animation: 3s ease-out 0s both FadeIn;
 }
 .loader .loader-icon {
-  font-size: 100px;
+  font-size: 400px;
   color: #9356DC;
-  transform: rotate(360deg);
-  transition: all 1s ease;
+  transition: all 1s ease-out;
 }
 @keyframes FadeIn {
   0% {
     opacity: 1;
+    transform: rotate(180deg);
   }
   100% {
     opacity: 0;
     z-index: -2;
-    background-color: #99E2D0;
+    transform: rotate(360deg);
   }
 }
 
