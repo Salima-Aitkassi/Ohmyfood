@@ -1,0 +1,18 @@
+.anime-coeur
+{
+    .coeur-vide{ opacity: 1;
+        transition: opacity 2s ease;
+      
+       
+    }
+    .coeur-plein{  opacity: 0;
+     background: linear-gradient( $color-primary,$color-secondary);
+     -webkit-background-clip: text;
+        background-clip: text;
+       color: transparent;
+    transition: opacity 0.7s ease;} 
+
+    &:hover{  .coeur-vide{ opacity: 0;}
+
+.coeur-plein{opacity: 1;}}
+}

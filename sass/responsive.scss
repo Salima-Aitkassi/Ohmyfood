@@ -1,0 +1,193 @@
+/* RESPONSIVE TABLETTES  */
+
+@media (min-width: 768px) and (max-width:992px)
+{ 
+    
+//html{ width: 100%;}
+    .logo { width: 100%;
+    
+    img{ padding-right: 6%;}}
+    
+    .localisation{ width: 100%;}
+
+    .explorer{ width: 100%;
+        
+    button.explorer__bouton{ 
+    margin-left: 40%;
+    margin-top: 6%;}
+
+    h1{ padding: 1.5%;}
+
+    p{ padding: 0 60px;}
+    }
+    nav { width: 100%;
+            margin: 0em 0em 0 22px;
+    
+    .navigation::before{ margin: 25px; }}
+
+    header h2{ padding-left: 10px;}
+
+
+    .menu .menu-i-logo {margin: 6px 106px 0 55px;}
+    .menu-picture img{ 
+        width: 100%;
+object-fit: cover;
+object-position: 39% 61%;}
+
+.borderbottom {margin-left: 190px; }
+
+   #corps-page
+    { 
+       width: 98%;
+       
+
+          .plats {
+    margin-left: 195px;}
+
+    h1{ padding-left: 28%;}
+
+    h2{ margin-left: 195px;}
+
+    .fa-stack{ padding-top: 2.5%;}}
+
+    
+#body{
+
+    width: 100%;
+    
+    .resto{ width: 90%;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding-bottom: 5%;
+
+    &__name__coeur{ padding-left: 120px ;}
+}
+
+    img{ display: flex;
+    height: 272px;
+    width: 95%;
+    object-position: 39% 61%;
+    border-radius: 13px 13px 0px 0px;}
+    
+
+   
+
+
+    
+    .Footer-menu  {
+    background-color: black;
+    color: white;
+    padding: 5%;
+    position: absolute;
+    top: 1417px;
+    width: 90%;
+     
+ 
+    }}}
+
+
+
+   /**/
+
+  
+/* RESPONSIVE DESKTOP */
+
+@media (min-width:993px)
+
+{ 
+    html{ width: 96%;}
+
+  .explorer{ height: 190px;
+
+.explorer__1{ margin-bottom: 4em;}}
+  nav{ width: 50%;
+margin-left: 21em;
+ .navigation::before 
+ {
+    position: absolute;
+    left: 280px;
+    counter-increment: compteur;
+    content: counter(compteur);
+    margin: 4em;
+    border: solid 1px #9356DC;
+    border-radius: 30%;
+    width: 13px;
+    border-radius: 40px;
+     padding: 3px 4px 3px 9px;
+    height: 20px;
+    background-color: #9356DC;
+    color: white;
+}}
+
+
+    
+    #body{ display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        padding: 13% 0 1% 0;
+        margin-top: 4em;
+
+        h3{margin: -4em 2em 0 -9em ; 
+        padding-top: 40px;
+    font: 14px;}
+
+    
+
+.resto{
+    padding-bottom: 40px;
+    width: 33%;
+    height: 260px;}}
+
+
+    /* PAGE MENU */
+
+    .menu{ display: flex;
+    justify-content: center;
+align-items: center;
+
+&__img{ padding-left: 3%;}}
+
+.menu-picture img{ 
+object-fit: cover;
+object-position: 38% 62%;}
+
+#corps-page{ padding-left: 35%;
+
+    .fa-stack {
+    padding-left: 15%;
+    padding-top: 2%;
+}
+}
+
+#bouton
+{ padding: 4px 0 50px 0; 
+
+ button.bouton-bouton {
+    border: none 0.5px;
+    border-radius: 22px 22px 22px 22px;
+    height: 38px;
+    width: 150px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: #9356dc 0px 1px 5px 3px;
+    color: #f2f2f2;
+    margin-top: -15px;
+    margin-right: 75px;
+}}
+
+
+.Footer-menu{ 
+
+    background-color: black;
+    color: white;
+    padding: 5%;
+    position: absolute;
+    top: 1423px;
+    }
+
+.Footer-menuN{  background-color: black;
+    color: white;
+    padding: 5%;
+    position: absolute;
+    top: 1520px;
+    width: 90%;
+}}
