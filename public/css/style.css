@@ -249,6 +249,7 @@
 }
 #bouton button.bouton-bouton:hover {
   transform: scale(1.1);
+  filter: brightness(1.3);
   background-blend-mode: lighten;
   transition: 0.5s;
 }
@@ -273,6 +274,7 @@
 }
 #boutonN button.bouton-bouton:hover {
   transform: scale(1.1);
+  filter: brightness(1.3);
   background-blend-mode: lighten;
   transition: 0.5s;
 }
@@ -408,7 +410,7 @@
 
   nav {
     width: 50%;
-    margin-left: 21em;
+    margin-left: 335px;
   }
   nav .navigation::before {
     position: absolute;
