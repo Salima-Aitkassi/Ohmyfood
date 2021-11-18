@@ -248,10 +248,10 @@
   color: #f2f2f2;
 }
 #bouton button.bouton-bouton:hover {
-  transform: scale(1.1);
   filter: brightness(1.3);
   background-blend-mode: lighten;
   transition: 0.5s;
+  box-shadow: #9356dc 0px 1px 5px 5px;
 }
 
 #boutonN {
@@ -273,10 +273,10 @@
   color: #f2f2f2;
 }
 #boutonN button.bouton-bouton:hover {
-  transform: scale(1.1);
   filter: brightness(1.3);
   background-blend-mode: lighten;
   transition: 0.5s;
+  box-shadow: #9356dc 0px 1px 5px 5px;
 }
 
 .Footer-menu {
@@ -597,9 +597,9 @@ input {
 
 .explorer__bouton:hover {
   cursor: pointer;
-  transform: scale(1.2);
   transition: 0.5s;
   background-blend-mode: lighten;
+  box-shadow: #9356dc 0px 1px 5px 5px;
 }
 
 button.explorer__bouton {

@@ -44,9 +44,10 @@ font-family: 'robotobold';}
 
 .explorer__bouton:hover
 { cursor:pointer;
-transform: scale(1.2);
+//transform: scale(1.2);
     transition: 0.5s;
-    background-blend-mode: lighten;}
+    background-blend-mode: lighten;
+    box-shadow: #9356dc 0px 1px 5px 5px;}
 
 button.explorer__bouton 
 {   display: flex;
