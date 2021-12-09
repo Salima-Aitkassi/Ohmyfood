@@ -128,7 +128,7 @@
   padding-top: 5%;
 }
 #corps-page .plats--anime_carte {
-  animation: apparitionCarte 1s ease both;
+  animation: apparitionCarte 0.5s ease both;
 }
 @keyframes apparitionCarte {
   from {

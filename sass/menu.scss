@@ -119,7 +119,7 @@ h2{ font-size: 15px;}
 }
 
 .plats--anime_carte { 
-animation: apparitionCarte 1s ease both;
+animation: apparitionCarte 0.5s ease both;
     @keyframes apparitionCarte{ 
         from {opacity: 0; } 
         to{opacity: 1; }}
