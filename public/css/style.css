@@ -62,24 +62,26 @@
 }
 #corps-page h1 {
   font-family: "shrikhandregular";
-  font-size: 27px;
-  padding-left: 3%;
+  font-size: 26px;
+  padding-left: 5%;
 }
 #corps-page .fr {
   margin-right: 15%;
 }
 #corps-page h2 {
   font-size: 15px;
-  padding-left: 3%;
+  padding-left: 6%;
+  margin-bottom: 5%;
+  position: relative;
 }
-#corps-page::after {
+#corps-page h2::after {
   content: "";
-  width: 10px;
   background-color: #99E2D0;
-  height: 4px;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  height: 5px;
+  width: 40px;
+  top: 23px;
+  left: 21px;
 }
 #corps-page .fa-stack {
   padding-left: 15%;
@@ -95,7 +97,7 @@
   padding-left: 2%;
   width: 320px;
   height: 60px;
-  margin-left: 5px;
+  margin-left: 15px;
   box-shadow: 1px 1px 3px 3px lightgrey;
   display: flex;
   align-items: center;
@@ -263,7 +265,7 @@
   color: white;
   padding: 5%;
   position: absolute;
-  top: 1383px;
+  top: 1399px;
   width: -webkit-fill-available;
 }
 
@@ -272,7 +274,7 @@
   color: white;
   padding: 5%;
   position: absolute;
-  top: 1479px;
+  top: 1494px;
   width: 90%;
 }
 
