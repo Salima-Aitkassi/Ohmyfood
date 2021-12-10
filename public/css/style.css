@@ -40,36 +40,46 @@
 #corps-page {
   background-color: #f2f2f2;
   border-radius: 35px 35px 0 0;
-  padding: 1%;
+  padding-left: 3%;
   position: relative;
   top: 240px;
-  transform: translateY(0.5);
-  transform: translateY(0.5);
-  transform: translateY(0.5);
-  transform: translateY(0.5);
-  transform: translateY(0.5);
-  transform: translateY(0.5);
-  transform: translateY(0.5);
-  transform: translateY(0.5);
-  transform: translateY(0.5);
+  /*.borderbottom
+       {
+          margin-top: -9px;
+          margin-bottom: 15px;
+          height: 3px;
+          width: 11%;
+          background-color: $color-tertiary;}*/
+  transform: translateY(0.5px);
+  transform: translateY(0.5px);
+  transform: translateY(0.5px);
+  transform: translateY(0.5px);
+  transform: translateY(0.5px);
+  transform: translateY(0.5px);
+  transform: translateY(0.5px);
+  transform: translateY(0.5px);
+  transform: translateY(0.5px);
 }
 #corps-page h1 {
   font-family: "shrikhandregular";
   font-size: 27px;
-  margin-left: 2px;
+  padding-left: 3%;
 }
 #corps-page .fr {
   margin-right: 15%;
 }
 #corps-page h2 {
   font-size: 15px;
+  padding-left: 3%;
 }
-#corps-page .borderbottom {
-  margin-top: -9px;
-  margin-bottom: 15px;
-  height: 3px;
-  width: 11%;
+#corps-page::after {
+  content: "";
+  width: 10px;
   background-color: #99E2D0;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 #corps-page .fa-stack {
   padding-left: 15%;
@@ -203,8 +213,6 @@
 }
 
 #bouton {
-  position: relative;
-  top: 240px;
   background-color: #f2f2f2;
   padding: 20px 0px 40px 0%;
   display: flex;
@@ -226,37 +234,36 @@
   box-shadow: #9356dc 0px 1px 5px 5px;
 }
 
-#boutonN {
-  width: 100%;
-  position: relative;
-  top: 239px;
-  background-color: #f2f2f2;
-  padding: 20px 0px 40px 0%;
-  display: flex;
-  justify-content: center;
-}
-#boutonN button.bouton-bouton {
-  border: none 0.5px;
-  border-radius: 22px 22px 22px 22px;
-  height: 35px;
-  width: 145px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: #9356dc 0px 1px 5px 3px;
-  color: #f2f2f2;
-}
-#boutonN button.bouton-bouton:hover {
-  filter: brightness(1.3);
-  background-blend-mode: lighten;
-  transition: 0.5s;
-  box-shadow: #9356dc 0px 1px 5px 5px;
-}
+/*#boutonN{ width: 100%;
+    position: relative;
+    top: 239px;
+    background-color: #f2f2f2;
+    padding: 20px 0px 40px 0%;
+    display: flex;
+    justify-content: center; 
 
+  button.bouton-bouton{ 
+        border: none 0.5px;
+    border-radius: 22px 22px 22px 22px;
+    height: 35px;
+    width: 145px;
+    background: linear-gradient($color-secondary,$color-primary);
+    box-shadow: #9356dc 0px 1px 5px 3px;
+    color: #f2f2f2;
+
+&:hover{
+
+    filter: brightness(1.3);
+    background-blend-mode: lighten;
+    transition: 0.5s;
+    box-shadow: #9356dc 0px 1px 5px 5px;
+}}}*/
 .Footer-menu {
   background-color: black;
   color: white;
   padding: 5%;
   position: absolute;
-  top: 1417px;
+  top: 1383px;
   width: -webkit-fill-available;
 }
 
@@ -265,7 +272,7 @@
   color: white;
   padding: 5%;
   position: absolute;
-  top: 1510px;
+  top: 1479px;
   width: 90%;
 }
 

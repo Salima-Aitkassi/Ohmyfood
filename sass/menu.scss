@@ -32,7 +32,7 @@ $color-tertiary: #99E2D0;
 
     background-color: #f2f2f2;
     border-radius: 35px 35px 0 0;
-    padding: 1%;
+    padding-left: 3%;
     position: relative;
     top: 240px;
    
@@ -40,20 +40,32 @@ $color-tertiary: #99E2D0;
     h1 { 
     font-family:'shrikhandregular';
     font-size: 27px;
-    margin-left: 2px;} 
+    padding-left: 3%;} 
 
 
  .fr { margin-right: 15%;} 
 
-h2{ font-size: 15px;}
+h2{ font-size: 15px;
+padding-left: 3%;}
 
-.borderbottom
+&::after{ 
+    content: "";
+    width: 10px;
+ background-color: #99E2D0;
+ height: 4px;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+        
+}
+
+/*.borderbottom
      {
         margin-top: -9px;
         margin-bottom: 15px;
         height: 3px;
         width: 11%;
-        background-color: $color-tertiary;}
+        background-color: $color-tertiary;}*/
 
 .fa-stack { 
     padding-left: 15%;
@@ -127,7 +139,7 @@ animation: apparitionCarte 0.5s ease both;
  @for $index from 0 to 9{ 
      .plats--#{ $index}
      { animation-delay: #{$index/4}s;}
-     transform: translateY(0.5);
+     transform: translateY(0.5px);
  }
 
 
@@ -174,9 +186,7 @@ p
 
 
 #bouton{ 
-    //width: 413px;
-    position: relative;
-    top: 240px;
+   
     background-color: #f2f2f2;
     padding: 20px 0px 40px 0%;
     display: flex;
@@ -198,7 +208,7 @@ p
     box-shadow: #9356dc 0px 1px 5px 5px;
 }}}
 
-#boutonN{ width: 100%;
+/*#boutonN{ width: 100%;
     position: relative;
     top: 239px;
     background-color: #f2f2f2;
@@ -221,7 +231,7 @@ p
     background-blend-mode: lighten;
     transition: 0.5s;
     box-shadow: #9356dc 0px 1px 5px 5px;
-}}}
+}}}*/
 
     
 
@@ -231,7 +241,7 @@ p
     color: white;
     padding: 5%;
     position: absolute;
-    top: 1417px;
+    top: 1383px;
     width:-webkit-fill-available ;
 }
 
@@ -239,6 +249,6 @@ p
     color: white;
     padding: 5%;
     position: absolute;
-    top: 1510px;
+    top: 1479px;
      width: 90%;
 }
